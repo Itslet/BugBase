@@ -1,0 +1,15 @@
+obj
+bin
+*.csproj.user
+*.suo
+*.cache
+Thumbs.db
+
+# Other useful stuff
+*.bak
+*.cache
+*.log
+*.swp
+*.user
+mysecrettextfile.txt
+passwords.txt
