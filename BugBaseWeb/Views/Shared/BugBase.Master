@@ -1,0 +1,86 @@
+﻿<%@ Master Language="C#" Inherits="System.Web.Mvc.ViewMasterPage" %>
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en">
+<head>
+<title>BugBase the Bug submitting app</title>
+ <link href="../../Content/style.css" rel="stylesheet" type="text/css" />
+ <script type="text/javascript" src="../../Scripts/jquery-1.4.1.js"></script>
+ <script type="text/javascript" src="../../Scripts/jquery.form.js"></script>
+  <script type="text/javascript" src="../../Scripts/BugBase.js"></script>
+ <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+</head>
+<body>
+<div id="container">
+<!-- HEADER //-->
+ <div id="header">
+<!-- MAIN TITLE //-->
+  <div id="logo"><h1>BugBase</h1></div>
+<!-- NAVIGATION //-->
+  <div id="nav">
+   <ul>
+    <li><%= Html.ActionLink("BugProject","Index","Home") %></li>
+    <li><%= Html.ActionLink("Logon","Logon","Account") %></li>
+    <li><%= Html.ActionLink("Sign up","Logon","Account") %></li>
+  </ul>
+  </div>
+ </div>
+<!-- NAV END //-->
+
+ <div id="main">
+<!-- LEFT COLUMN //-->
+  <div id="left">
+<p><img src="../../Content/images/image.jpg" alt="Static Image" /></p>
+   
+  <div>
+        <asp:ContentPlaceHolder ID="MainContent" runat="server">
+        
+        </asp:ContentPlaceHolder>
+    </div>
+   </div>
+<!-- LEFT COLUMN END //-->
+
+<!-- RIGHT COLUMNS //-->
+  <div id="right">
+<!-- SIDEBAR //-->
+   <div id="sidebar">
+   <div class="blog-description"><h5>DESCRIPTION</h5>Cardeo Minimal is a Free CSS Template based on the Cardeo Minimal WordPress Theme</div>
+
+<!-- TWITTER STATUS //-->
+   <h3>TWITTER</h3>
+   <p id="twitter_update_list" style="padding:0;"></p>
+<!-- LINK LIST //-->
+   <h3>LINKS</h3>
+   <ul>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+    <li><a href="#">link</a></li>
+   </ul>
+   </div>
+
+<!-- ADS //-->
+   <div id="ads">
+   <p><img src="../../Content/images/ad.gif" width="125" height="125" alt="ad" /></p>
+   <p><img src="../../Content/images/ad.gif" width="125" height="125" alt="ad" /></p>
+   <p><img src="../../Content/images/ad.gif" width="125" height="125" alt="ad" /></p>
+   <p><img src="../../Content/images/ad.gif" width="125" height="125" alt="ad" /></p>
+   </div>
+  </div>
+<!-- RIGHT END //-->
+
+<!-- FOOTER //-->
+  <div id="footer">
+   <p>CSS Template by <a href="http://cardeo.ca">cardeo.ca</a></p>
+   
+  </div>
+ </div>
+<!-- MAIN END //-->
+
+</div>
+<!-- CONTAINER END //-->
+<!-- TWITTER SCRIPT - replace "mlambert" with your twitter username //-->
+<script type="text/javascript" src="http://twitter.com/javascripts/blogger.js"></script>
+<script type="text/javascript" src="http://twitter.com/statuses/user_timeline/jacquelientje.json?callback=twitterCallback2&amp;count=1"></script>
+</body>
+</html>
